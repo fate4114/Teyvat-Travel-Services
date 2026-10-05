@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teyvat Travel Services - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Teyvat Travel Services</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mondstadt.html">Mondstadt</a></li>
+                <li><a href="liyue.html">Liyue</a></li>
+                <li><a href="inazuma.html">Inazuma</a></li>
+                <li><a href="sumeru.html">Sumeru</a></li>
+                <li><a href="fontaine.html">Fontaine</a></li>
+                <li><a href="natlan.html">Natlan</a></li>
+                <li><a href="snezhnaya.html">Snezhnaya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="Teyvat.png" alt="Mondstadt City" class="nation-banner">
+            <div class="hero-content hero-home">
+                <a href="#destinations" class="btn">Explore Destinations</a>
+            </div>
+        </section>
+
+        
+        <section id="destinations" class="destinations-section">
+            <h2>Featured Destinations</h2>
+            <div class="destinations-grid">
+                
+                <div class="card">
+                    <h3>Mondstadt</h3>
+                    <p>City of Freedom.</p>
+                    <img src="mondstadt.png" alt="Mondstadt" class="card-img">
+                    <a href="mondstadt.html" class="btn">View Package</a>
+                </div>
+
+                <div class="card">
+                    <h3>Liyue</h3>
+                    <p>The Harbor of Stone and Commerce.</p>
+                    <img src="liyue.png" alt="Liyue" class="card-img">
+                    <a href="liyue.html" class="btn">View Package</a>
+                </div>
+
+                <div class="card">
+                    <h3>Inazuma</h3>
+                    <p>The Realm of Eternal Thunder.</p>
+                    <img src="Inazuma.png" alt="Inazuma" class="card-img">
+                    <a href="inazuma.html" class="btn">View Package</a>
+                </div>
+
+                <div class="card">
+                    <h3>Sumeru</h3>
+                    <p>The City of Wisdom & Rainforest Retreat.</p>
+                    <img src="Sumeru.png" alt="Sumeru" class="card-img">
+                    <a href="sumeru.html" class="btn">View Package</a>
+                </div>
+
+                <div class="card">
+                    <h3>Fontaine</h3>
+                    <p> The Capital of Justice, Steam, and Aquanics.</p>
+                    <img src="Fountain.png" alt="Fontaine" class="card-img">
+                    <a href="fontaine.html" class="btn">View Package</a>
+                </div>
+
+                <div class="card">
+                    <h3>Natlan</h3>
+                    <p>The Land of Ash, Hot Springs, and Valor.</p>
+                    <img src="Natlan.png" alt="Natlan" class="card-img">
+                    <a href="natlan.html" class="btn">View Package</a>
+                </div>
+
+                <div class="card">
+                    <h3>Snezhnaya</h3>
+                    <p>The Eternal White Tundra.</p>
+                    <img src="Snezhnaya.png" alt="Snezhnaya" class="card-img">
+                    <a href="snezhnaya.html" class="btn">View Package</a>
+                </div>
+
+            </div>
+        </section>
+
+      
+        <section class="profile">
+            <h2>About the Director / Owner</h2>
+            <p>Founded by a former seasoned traveler, Teyvat Travel Services was born out of a passion for seamless exploration, cultural appreciation, and unforgettable journeys across all seven regions.</p>
+        </section>
+
+        
+        <section class="faq-section">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            
+            <div class="faq-item" style="background-color: #fcf4ff; border: 1px solid #b3c5ff; padding: 1.2rem; margin-bottom: 1rem; border-radius: 8px;">
+                <h3 style="margin-bottom: 0.5rem; color: #2c3e50; font-size: 1.05rem;">How do I book a tour with Teyvat Travel Services?</h3>
+                <p style="margin: 0; color: #555;">You can choose your destination from our navigation bar, click any card above, or use the quick reservation form below.</p>
+            </div>
+
+            <div class="faq-item" style="background-color: #fcf4ff; border: 1px solid #b3c5ff; padding: 1.2rem; margin-bottom: 1rem; border-radius: 8px;">
+                <h3 style="margin-bottom: 0.5rem; color: #2c3e50; font-size: 1.05rem;">Are there discounts available for group tours?</h3>
+                <p style="margin: 0; color: #555;">Yes! We offer an automatic 10% group discount for bookings with 5 or more travelers (Pax).</p>
+            </div>
+
+            <div class="faq-item" style="background-color: #fcf4ff; border: 1px solid #b3c5ff; padding: 1.2rem; margin-bottom: 1rem; border-radius: 8px;">
+                <h3 style="margin-bottom: 0.5rem; color: #2c3e50; font-size: 1.05rem;">Is transportation included in the tour packages?</h3>
+                <p style="margin: 0; color: #555;">All packages include localized travel accommodations such as Aquabus rides, carriage transports, or guided walking routes depending on the nation.</p>
+            </div>
+        </section>
+
+       
+        <section class="booking-section">
+            <h2>General Tour Reservation</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="nationSelect">Select Destination Nation:</label>
+                    <select id="nationSelect" name="nationSelect" required onchange="calculateTotal()">
+                        <option value="12500">Mondstadt (12,500 PHP / Person)</option>
+                        <option value="15000">Liyue (15,000 PHP / Person)</option>
+                        <option value="18000">Inazuma (18,000 PHP / Person)</option>
+                        <option value="14000">Sumeru (14,000 PHP / Person)</option>
+                        <option value="20000">Fontaine (20,000 PHP / Person)</option>
+                        <option value="16500">Natlan (16,500 PHP / Person)</option>
+                        <option value="22000">Snezhnaya (22,000 PHP / Person)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+63 912 345 6789" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="travelDate">Preferred Travel Date:</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pax">Number of Guests (Pax):</label>
+                    <input type="number" id="pax" name="pax" min="1" max="20" value="1" required oninput="calculateTotal()">
+                </div>
+
+                <div class="form-group">
+                    <label for="paymentType">Payment Option:</label>
+                    <select id="paymentType" name="paymentType" onchange="calculateTotal()">
+                        <option value="full">Full Payment (100%)</option>
+                        <option value="downpayment">Down Payment / Reservation Fee (20%)</option>
+                        <option value="installment">Staggered / Installment Payment</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="installmentGroup" style="display: none;">
+                    <label for="installmentMonths">Installment Duration:</label>
+                    <select id="installmentMonths" name="installmentMonths" onchange="calculateTotal()">
+                        <option value="3">3 Months Plan</option>
+                        <option value="4">4 Months Plan</option>
+                        <option value="5">5 Months Plan</option>
+                        <option value="6">6 Months Plan</option>
+                    </select>
+                </div>
+
+                <div class="price-summary">
+                    <p style="font-size: 0.95rem; color: #555;">Original Amount: <span id="originalPrice">12,500</span> PHP</p>
+                    <p id="discountRow" style="display: none; font-size: 0.95rem; color: #e67e22; font-weight: bold;">
+                        Group Discount (10% Off): -<span id="discountPrice">0</span> PHP
+                    </p>
+                    <h3 style="margin-top: 0.3rem;">Total Package Amount: <span id="totalPrice">12,500</span> PHP</h3>
+                    <p style="margin-top: 0.5rem;"><strong>Initial Amount Due Today:</strong> <span id="amountDue">12,500</span> PHP</p>
+                    <p id="monthlyBreakdown" style="display: none; color: #27ae60; font-weight: bold; margin-top: 0.3rem;">
+                        Monthly Installment: <span id="monthlyAmount">0</span> PHP / month
+                    </p>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Submit Booking Request</button>
+            </form>
+
+            <div id="receiptContainer" style="display: none; margin-top: 2rem; padding: 1.5rem; background-color: #e8f8f5; border: 2px dashed #2ecc71; border-radius: 8px;">
+                
+
+                <div style="background-color: #d4edda; color: #155724; padding: 0.8rem; border-radius: 5px; margin-bottom: 1rem; border: 1px solid #c3e6cb; font-weight: bold; text-align: center;">
+                    ✔ Thank you! Your reservation has been successfully confirmed.
+                </div>
+
+                <h3 style="color: #27ae60; margin-bottom: 1rem;">Booking Confirmation Receipt</h3>
+                <p><strong>Selected Destination:</strong> <span id="rNation"></span></p>
+                <p><strong>Guest Name:</strong> <span id="rName"></span></p>
+                <p><strong>Email:</strong> <span id="rEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="rPhone"></span></p>
+                <p><strong>Travel Date:</strong> <span id="rDate"></span></p>
+                <p><strong>Number of Guests:</strong> <span id="rPax"></span></p>
+                <p><strong>Payment Mode Selected:</strong> <span id="rPaymentType"></span></p>
+                
+                <hr style="border: 0; border-top: 1px dashed #2ecc71; margin: 1rem 0;">
+
+                <p><strong>Original Package Amount:</strong> <span id="rOriginal"></span> PHP</p>
+                <p id="rDiscountRow" style="display: none; color: #e67e22; font-weight: bold;">
+                    <strong>Group Discount (10% Off):</strong> -<span id="rDiscount"></span> PHP
+                </p>
+
+                <h4 style="color: #2980b9; margin-top: 0.5rem;">Total Package Amount: <span id="rTotal"></span> PHP</h4>
+                <h4 style="color: #27ae60; margin-top: 0.5rem;">Amount Due Today: <span id="rAmountDue"></span> PHP</h4>
+                <p id="rMonthlyNote" style="display: none; font-weight: bold; color: #e67e22; margin-top: 0.3rem;">
+                    Monthly Plan: <span id="rMonthlyText"></span>
+                </p>
+                <p style="font-size: 0.85rem; color: #7f8c8d; margin-top: 0.5rem;">* A confirmation copy has been generated for the Director of Operations.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script>
+        function calculateTotal() {
+            const selectElement = document.getElementById('nationSelect');
+            const pricePerPerson = parseInt(selectElement.value, 10);
+            const paxInput = parseInt(document.getElementById('pax').value, 10);
+            const pax = (paxInput > 0) ? paxInput : 1;
+            
+           
+            let originalTotal = pricePerPerson * pax;
+            let discount = 0;
+            let finalTotal = originalTotal;
+
+            const discountRow = document.getElementById('discountRow');
+
+            
+            if (pax >= 5) {
+                discount = originalTotal * 0.10;
+                finalTotal = originalTotal - discount;
+                discountRow.style.display = 'block';
+                document.getElementById('discountPrice').innerText = discount.toLocaleString();
+            } else {
+                discountRow.style.display = 'none';
+            }
+
+            document.getElementById('originalPrice').innerText = originalTotal.toLocaleString();
+            document.getElementById('totalPrice').innerText = finalTotal.toLocaleString();
+
+            const paymentType = document.getElementById('paymentType').value;
+            const installmentGroup = document.getElementById('installmentGroup');
+            const installmentMonths = parseInt(document.getElementById('installmentMonths').value, 10);
+            const monthlyBreakdown = document.getElementById('monthlyBreakdown');
+            
+            let amountDue = finalTotal;
+
+            if (paymentType === 'full') {
+                installmentGroup.style.display = 'none';
+                monthlyBreakdown.style.display = 'none';
+                amountDue = finalTotal;
+            } 
+            else if (paymentType === 'downpayment') {
+                installmentGroup.style.display = 'none';
+                monthlyBreakdown.style.display = 'none';
+                amountDue = finalTotal * 0.20; 
+            } 
+            else if (paymentType === 'installment') {
+                installmentGroup.style.display = 'block';
+                monthlyBreakdown.style.display = 'block';
+                
+                const monthly = (finalTotal / installmentMonths).toFixed(2);
+                amountDue = parseFloat(monthly);
+                document.getElementById('monthlyAmount').innerText = Number(monthly).toLocaleString();
+            }
+
+            document.getElementById('amountDue').innerText = amountDue.toLocaleString();
+        }
+
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const selectElement = document.getElementById('nationSelect');
+            const selectedText = selectElement.options[selectElement.selectedIndex].text;
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const travelDate = document.getElementById('travelDate').value;
+            const pax = parseInt(document.getElementById('pax').value, 10) || 1;
+            
+            const originalTotal = document.getElementById('originalPrice').innerText;
+            const discountPrice = document.getElementById('discountPrice').innerText;
+            const total = document.getElementById('totalPrice').innerText;
+            const amountDue = document.getElementById('amountDue').innerText;
+
+            const paymentSelect = document.getElementById('paymentType');
+            const paymentTypeText = paymentSelect.options[paymentSelect.selectedIndex].text;
+            const paymentVal = paymentSelect.value;
+
+            
+            alert(`Thank you, ${fullname}! Your reservation has been successfully confirmed. Please check your confirmation receipt below.`);
+
+            
+            document.getElementById('rNation').innerText = selectedText;
+            document.getElementById('rName').innerText = fullname;
+            document.getElementById('rEmail').innerText = email;
+            document.getElementById('rPhone').innerText = phone;
+            document.getElementById('rDate').innerText = travelDate;
+            document.getElementById('rPax').innerText = pax;
+            document.getElementById('rPaymentType').innerText = paymentTypeText;
+            
+            
+            document.getElementById('rOriginal').innerText = originalTotal;
+            const rDiscountRow = document.getElementById('rDiscountRow');
+            if (pax >= 5) {
+                document.getElementById('rDiscount').innerText = discountPrice;
+                rDiscountRow.style.display = 'block';
+            } else {
+                rDiscountRow.style.display = 'none';
+            }
+
+            document.getElementById('rTotal').innerText = total;
+            document.getElementById('rAmountDue').innerText = amountDue;
+
+            const rMonthlyNote = document.getElementById('rMonthlyNote');
+            if (paymentVal === 'installment') {
+                const months = document.getElementById('installmentMonths').value;
+                const monthlyVal = document.getElementById('monthlyAmount').innerText;
+                document.getElementById('rMonthlyText').innerText = monthlyVal + " PHP / month for " + months + " months";
+                rMonthlyNote.style.display = 'block';
+            } else {
+                rMonthlyNote.style.display = 'none';
+            }
+
+            document.getElementById('receiptContainer').style.display = 'block';
+            document.getElementById('receiptContainer').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        
+        calculateTotal();
+    </script>
+</body>
+</html>
